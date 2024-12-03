@@ -58,8 +58,8 @@ ll dijkstra(vector<vector<std::tuple<ll, ll, ll>>> bruh, ll phoneStart, ll phone
 		{
 			if(!visited[std::get<0>(bruh[node][i])])
 			{
-				// fix this so it checks whether its better to wait for the phone call to end and then take the bus or if it's better to just walk outright
-				if((weight <= phoneStart && weight+std::get<1>(bruh[node][i]) > phoneStart) || (weight >= phoneStart && weight < phoneEnd)) // big ass needs to walk
+				// checks whether its better to wait for the phone call to end and then take the bus or if it's better to just walk outright
+				if((weight <= phoneStart && weight+std::get<1>(bruh[node][i]) > phoneStart) || (weight >= phoneStart && weight < phoneEnd))
 				{
 					if(weight+std::get<2>(bruh[node][i]) < phoneEnd+std::get<1>(bruh[node][i]))
 					{
