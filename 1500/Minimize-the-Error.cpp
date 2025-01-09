@@ -31,15 +31,15 @@ const ll MODDY3 = 1e8;
 // minimize the error 
 int main()
 {
-    int n, ka, kb, k;
-    cin >> n >> ka >> kb;
+	int n, ka, kb, k;
+	cin >> n >> ka >> kb;
 	k = ka+kb;
 	vector<long long> v1(n);
 	vector<long long> v2(n);
-    for(int i = 0; i < n; i++)
-    {
+	for(int i = 0; i < n; i++)
+	{
 		cin >> v1[i];
-    }
+	}
 	for(int i = 0; i < n; i++)
 	{
 		cin >> v2[i];
