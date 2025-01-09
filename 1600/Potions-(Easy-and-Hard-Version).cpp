@@ -24,13 +24,13 @@ int main()
     for(int i = 0; i < n; i++)
     {
         std::cin >> temp;
-		health += temp;
-		pq.push(temp);
-		while(health < 0)
-		{
-			health -= pq.top();
-			pq.pop();
-		}
+	health += temp;
+	pq.push(temp);
+	while(health < 0)
+	{
+		health -= pq.top();
+		pq.pop();
+	}
     }
     std::cout << pq.size();
     return 0;
