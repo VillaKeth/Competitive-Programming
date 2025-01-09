@@ -77,5 +77,5 @@ int main()
 		pq.pop();
 	}
 	cout << sum;
-    return 0;
+	return 0;
 }
